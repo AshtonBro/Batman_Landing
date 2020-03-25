@@ -87,6 +87,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .movie-info {
@@ -151,4 +152,42 @@ body {
     background-size: 100%;
     margin-left: 15px;
     transform: rotate(90deg);
+}
+
+.content {
+    background: #ffffff;
+    border-radius: 3px;
+    color: #000000;
+    padding: 43px 50px;
+}
+
+.poster {
+    display: block;
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 44px;
+    background: #FF8F27;
+    font-size: 15px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.actors-title {
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.actors-list {
+    margin: 0;
+    list-style: none;
+    padding-left: 15px;
+    line-height: 150%;
+    text-decoration: underline;
 }
