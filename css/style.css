@@ -155,6 +155,8 @@ body {
 }
 
 .content {
+    display: flex;
+    justify-content: space-between;
     background: #ffffff;
     border-radius: 3px;
     color: #000000;
@@ -174,6 +176,7 @@ body {
     line-height: 16px;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
 }
 
 .actors-title {
@@ -190,4 +193,29 @@ body {
     padding-left: 15px;
     line-height: 150%;
     text-decoration: underline;
+}
+
+.full-info {
+    flex: 0.97
+}
+
+.full-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-content {
+    margin-right: 70px;
+}
+
+.info-tabs__item {
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.info-tabs__item:hover {
+    color: #FF8F27;
 }
