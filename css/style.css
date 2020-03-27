@@ -211,6 +211,11 @@ body {
 
 .tabs-content {
     margin-right: 70px;
+    display: none;
+}
+
+.visible {
+    display: block;
 }
 
 .info-tabs__item {
@@ -232,6 +237,10 @@ body {
 }
 
 .info-tabs__item:hover {
+    color: #FF8F27;
+}
+
+.info-tabs__item-active {
     color: #FF8F27;
 }
 

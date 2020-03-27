@@ -12,7 +12,9 @@
       rel="stylesheet">
 
    <!-- Custom styles for this template -->
+   <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/animate.css">
 
 </head>
 
@@ -36,15 +38,15 @@
       </div>
       <!-- /.header -->
       <div class="main">
-         <h1 class="title">Бэтмен</h1>
+         <h1 class="title animated fadeInRight">Бэтмен</h1>
          <!-- /.title -->
-         <small class="title-en">The Batman</small>
+         <small class="title-en animated bounce">The Batman</small>
          <!-- /.title-en -->
          <div class="info">
-            <div class="movie-info">
+            <div class="movie-info animated fadeInUp delay-1s">
                <span class="tag">Фильм</span>
                <span class="country">США, 2021 год</span>
-               <a href="#" class="play">Смотреть трейлер</a>
+               <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg" class="play">Смотреть трейлер</a>
             </div>
             <!-- /.movie-info -->
             <a href="" class="more">Подробнее</a>
@@ -85,19 +87,19 @@
 
             <div class="full-info">
                <nav class="info-tabs">
-                  <a href="#" class="info-tabs__item">Описание</a>
+                  <a href="#about" class="info-tabs__item">Описание</a>
                   <!-- /.info-menu__item -->
-                  <a href="#" class="info-tabs__item">Рецензии</a>
+                  <a href="#reviews" class="info-tabs__item">Рецензии</a>
                   <!-- /.info-menu__item -->
-                  <a href="#" class="info-tabs__item">Премьеры</a>
+                  <a href="#examples" class="info-tabs__item">Премьеры</a>
                   <!-- /.info-menu__item -->
-                  <a href="#" class="info-tabs__item">Актеры</a>
+                  <a href="#actors" class="info-tabs__item">Актеры</a>
                   <!-- /.info-menu__item -->
-                  <a href="#" class="info-tabs__item">Награды</a>
+                  <a href="#awards" class="info-tabs__item">Награды</a>
                   <!-- /.info-menu__item -->
-                  <a href="#" class="info-tabs__item">Факты</a>
+                  <a href="#facts" class="info-tabs__item">Факты</a>
                   <!-- /.info-menu__item -->
-                  <a href="#" class="info-tabs__item">Сайты</a>
+                  <a href="#sites" class="info-tabs__item">Сайты</a>
                   <!-- /.info-tabs__item -->
                   <a href="#" class="info-tabs__item">
                      <img src="./img/main/bookmark-icon.svg" alt="#" class="bookmark-added">
@@ -106,12 +108,12 @@
                </nav>
                <!-- /.info-tabs -->
                <div class="full-content">
-                  <div class="tabs-content">
+                  <div class="tabs-content visible" id="about">
                      <p class="text text-bold">Предстоящий американский супергеройский фильм,
                         основанный на одноимённых комиксах издательства
                         DC Comics. Картина будет выпущена компанией Warner Bros.
                         и будет перезагрузкой всех фильмов о Бэтмене.</p>
-
+                     
                      <p class="text text-bold">Фильм является десятым по счёту фильмом из Расширенной
                         вселенной DC. Режиссёром и сценаристом фильма выступит
                         Мэтт Ривз, а главную роль исполнит Роберт Паттинсон</p>
@@ -132,6 +134,24 @@
                         был опубликован тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016
                         года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который,
                         возможно, станет главным злодеем фильма.</p>
+                  </div>
+                  <div class="tabs-content" id="reviews">
+                     <p>Тут скоро появятся рецензии</p>
+                  </div>
+                  <div class="tabs-content" id="examples">
+                     <p>Тут скоро появятся премьеры</p>
+                  </div>
+                  <div class="tabs-content" id="actors">
+                     <p>Тут скоро появятся актеры</p>
+                  </div>
+                  <div class="tabs-content" id="awards">
+                     <p>Тут скоро появятся награды</p>
+                  </div>
+                  <div class="tabs-content" id="facts">
+                     <p>Тут скоро появятся факты</p>
+                  </div>
+                  <div class="tabs-content" id="sites">
+                     <p>Тут скоро появятся сайты</p>
                   </div>
                   <!-- /.tabs-content -->
                   <div class="subscribe">
@@ -158,6 +178,10 @@
       <!-- /.main -->
    </div>
    <!-- /.container -->
+
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+   <script src="./js/jquery.fancybox.min.js"></script>
+   <script src="./js/main.js"></script>
 </body>
 
 </html>
