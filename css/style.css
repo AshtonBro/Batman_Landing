@@ -160,13 +160,17 @@ body {
     background: #ffffff;
     border-radius: 3px;
     color: #000000;
-    padding: 43px 50px;
+    padding: 3% 4%;
     margin-bottom: 64px;
+}
+
+.short-info {
+    margin-right: 3%;
 }
 
 .poster {
     display: block;
-    margin-top: -80px;
+    margin-top: -40%;
     margin-bottom: 20px;
 }
 
@@ -219,12 +223,12 @@ body {
 .info-tabs {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 4%;
 }
 
 /* not говорит задай всем item margin-right 40px кроме последнего*/
 .info-tabs__item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 4%;
 }
 
 .info-tabs__item:hover {
@@ -236,6 +240,10 @@ body {
     font-size: 16px;
     line-height: 140%;
     margin-bottom: 14px;
+}
+
+.text-bold {
+    font-weight: bold;
 }
 
 .subscribe-from {
@@ -269,4 +277,95 @@ body {
     padding: 12px;
 }
 
-@medua
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .info-tabs__item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 740px;
+    }
+    .info-tabs {
+        flex-wrap: wrap;
+    }
+    .info-tabs__item {
+        flex-basis: 20%;
+        line-height: 2;
+    }
+    .full-content {
+        flex-wrap: wrap;
+    }
+    .tabs-content {
+        margin-bottom: 5%;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .actors-list {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 550px;
+    }
+    .more {
+        display: none;
+    }
+    .info-tabs__item {
+        flex-basis: 35%;
+    }
+    .tabs-content {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 578px) {
+    .container {
+        max-width: 90%;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search {
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 6%;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .short-info {
+        margin-bottom: 5%;
+    }
+    .actors-list, actors-title {
+        display: none;
+    }
+    .subscribe {
+        margin: auto;
+    }
+    .movie-info {
+        flex-wrap: wrap;
+    }
+    .play {
+        flex-basis: 100%;
+        margin-top: 5%;
+    }
+    .short-info {
+        margin-right: 0;
+    }
+    .poster {
+        margin-top: -20%;
+        display: inline-block;
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
+}
