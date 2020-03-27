@@ -211,11 +211,35 @@ body {
 .info-tabs__item {
     font-size: 18px;
     line-height: 21px;
-    margin-right: 40px;
     color: #000000;
     text-decoration: none;
 }
 
+.info-tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* not говорит задай всем item margin-right 40px кроме последнего*/
+.info-tabs__item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .info-tabs__item:hover {
     color: #FF8F27;
+}
+
+.text {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.subscribe-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 0;
+    margin-bottom: 14px;
 }
